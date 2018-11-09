@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//WebContent/jsp/bookpublish.jsp=UTF-8
+encoding//WebContent/jsp/faillogin.jsp=UTF-8
+encoding//WebContent/jsp/home.jsp=UTF-8
+encoding//WebContent/jsp/kindsofbook.jsp=UTF-8
+encoding//WebContent/jsp/login.jsp=UTF-8
+encoding//WebContent/jsp/resignfail.jsp=UTF-8
+encoding//WebContent/jsp/searchfail.jsp=UTF-8
+encoding//WebContent/jsp/searchone.jsp=UTF-8
+encoding//WebContent/jsp/updatebook.jsp=UTF-8
+encoding//WebContent/jsp/updatefail.jsp=UTF-8
+encoding//WebContent/jsp/updatesuccess.jsp=UTF-8
+encoding//WebContent/jsp/userlist.jsp=UTF-8
+encoding//src/utils/HibernateUtils.java=UTF-8
+encoding/<project>=UTF-8

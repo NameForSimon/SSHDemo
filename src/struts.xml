@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="demo1" extends="struts-default" namespace="/">
+		<action name="userAction" class="userAction" method="login">
+		<result name="faillogin">/jsp/faillogin.jsp</result>
+		<result name="success" >/jsp/home.jsp</result>
+		<result name="adminsuccess">/jsp/adminhome.jsp</result>
+		</action>
+		<action name="resignAction" class="userAction" method="resign">
+		<result name="resignfail">/jsp/resignfail.jsp</result>
+		<result name="resignsuccess">/jsp/resignsuccess.jsp</result>
+		</action>
+		<action name="updateAction" class="userAction" method="update">
+		<result name="updatesuccess">/jsp/updatesuccess.jsp</result>
+		<result name="updatefail">/jsp/updateuserfail.jsp</result>
+		</action>
+		<action name="publishAction" class="bookAction" method="publish">
+		<result name="announcesuccess">/jsp/announcesuccess.jsp</result>
+		<result name="fail">/jsp/announcefail.jsp</result>
+		</action>
+		<action name="listAction" class="bookAction" method="list">
+		<result name="cbook">/jsp/cbook.jsp</result>
+		<result name="home">/jsp/home.jsp</result>
+		</action>
+		<action name="userbookAction" class="userAction" method="userbooklist">
+		<result name="searchsuccess">/jsp/searchuserbook.jsp</result>
+		<result name="searchfail">/jsp/searchuserbook.jsp</result>
+		</action>
+		<action name="updatebookAction" class="bookAction" method="updatebook">
+		<result name="fail">/jsp/updatefail.jsp</result>
+		<result name="ok">/jsp/updatesuccess.jsp</result>
+		</action>
+		<action name="deletebookAction" class="bookAction" method="deletebook">
+		<result name="fail">/jsp/deletefail.jsp</result>
+		<result name="ok">/jsp/deletesuccess.jsp</result>
+		</action>
+		<action name="searchoneAction" class="bookAction" method="searchbook">
+		<result name="fail">/jsp/searchfail.jsp</result>
+		<result name="ok">/jsp/searchone.jsp</result>
+		</action>
+		<action name="searchaboutAction" class="bookAction" method="searchaboutbook">
+		<result name="fail">/jsp/searchfail.jsp</result>
+		<result name="ok">/jsp/kindsofbook.jsp</result>
+		</action>
+		<action name="admindeletebookAction" class="administratorAction" method="Deletebook">
+		<result name="fail">/jsp/deletefail.jsp</result>
+		<result name="ok">/jsp/deletesuccess.jsp</result>
+		</action>
+		<action name="admindeleteuserAction" class="administratorAction" method="Deleteuser">
+		<result name="fail">/jsp/deletefail.jsp</result>
+		<result name="ok">/jsp/deletesuccess.jsp</result>
+		</action>
+		<action name="publishnewsAction" class="administratorAction" method="publishnews">
+		<result name="fail">/jsp/announcefail.jsp</result>
+		<result name="ok">/jsp/announcesuccess.jsp</result>
+		</action>
+		<action name="resignAdminAction" class="administratorAction" method="resignAdmin">
+		<result name="fail">/jsp/resignfail.jsp</result>
+		<result name="ok">/jsp/resignsuccess.jsp</result>
+		</action>
+		<action name="listuserAction" class="administratorAction" method="listUser">
+		<result name="userlist">/jsp/userlist.jsp</result>
+		</action>
+		<action name="adminupdateAction" class="administratorAction" method="adminupdate">
+		<result name="updatesuccess">/jsp/updatesuccess.jsp</result>
+		<result name="updatefail">/jsp/updateuserfail.jsp</result>
+		</action>
+		<action name="adminnewsAction" class="administratorAction" method="queryadminnews">
+		<result name="ok">/jsp/adminnews.jsp</result>
+		</action>		
+	</package>
+</struts>
